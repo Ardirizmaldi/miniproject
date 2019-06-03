@@ -9,6 +9,7 @@ import { AppMaterialModule } from './app-material.module';
 import { FractionComponent } from './fraction/fraction.component';
 import { HeaderComponent } from './header/header.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { FractionRoutingModule } from './fraction/fraction-routing.module';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    FractionRoutingModule,
     AppMaterialModule,
     ReactiveFormsModule,
     FormsModule
