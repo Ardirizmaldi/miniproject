@@ -6,7 +6,7 @@ This folder contains Angular project + Webpack builder + Heroku Deploy postinsta
 
 In this folder /src/app/test.html this file only can be oppened with a copy path on browser. so it need to be download this folder first.
 
-##Design web
+## Web Design
 
 This web is using scss and angular material for design.
 
