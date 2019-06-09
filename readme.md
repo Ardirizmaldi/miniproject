@@ -4,7 +4,7 @@ This folder contains Angular project + Webpack builder + Heroku Deploy postinsta
 
 ## Main Idea
 
-In this folder /src/app/test.html this file only can be oppened with a copy path on browser. so it need to be download this folder first.
+In this folder /src/app/test.html this file only can be oppened after download this folder with right click on mouse and copy path then paste on browser.
 
 ## Web Design
 
