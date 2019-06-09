@@ -1,29 +1,27 @@
-## Todo
-### Front End
-* form buku
-* form member
-* *filter buku*
-* *filter member
+### Money Changer Project
+
+This folder contains Angular project + Webpack builder + Heroku Deploy postinstall can see in package.json.
+
+## Main Idea
+
+In this folder /src/app/test.html this file only can be oppened with a copy path on browser. so it need to be download this folder first.
+
+##Design web
+
+This web is using scss and angular material for design.
 
 ## Development server
 
+First instal npm run `npm install` in the folder using terminal
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Build in webpack bundle
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng build` or `webpack` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Build
+## Heroku Deploy
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Link: https://projec-tokoped.herokuapp.com/welcome
 
 ## Further help
 
