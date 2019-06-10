@@ -12,8 +12,7 @@ This web is using scss and angular material for design.
 
 ## Development server
 
-First instal npm run `npm install` in the folder using terminal
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+First instal npm run `npm install` in the folder using terminal direct to the project folder. Then, After `node_modules` installed in the folder type run `ng serve` in the terminal for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Build in webpack bundle
 
