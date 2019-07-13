@@ -49,51 +49,48 @@ export class FractionComponent implements OnInit {
     // }
 
 
-    // function makeChange() {
-    //   // compute change as an array: each element of change tells
-    //   // how many of the corresponding value in this.fraction to give. The
-    //   // total value should equal this.money.
-    //   let change = computeChange(this.fraction, this.money);
-    //   // now format the results. Output should look like:
-    //   // NUMBER   VALUE
-    //   //    1       50
-    //   //    0       25
-    //   //    1       10
-    //   //    1        5
-    //   //    3        1
-    //   // TOTAL this.money: 68 (total is correct)
-    //   //
-    //   // First, we'll do some type checking in case change is not of the
-    //   // expected type.
-    //   change = [].concat(change); // force whatever it is to be an array
-    //   // it should be an array of numbers, so let's check
-    //   for (const item of change) {
-    //     if (typeof (change[item]) !== 'number') {
-    //       return 'Error: the function computeChange did not return ' +
-    //         'an array of numbers.';
-    //     }
-    //   }
-    //   if (change.length > this.fraction.length) {
-    //     return 'Error: the function computeChange returned an array ' +
-    //       'longer than the length (' + this.fraction.length + ') of this.fraction.';
-    //   }
-    //   if (change.length < this.fraction.length) {
-    //     return 'Error: the function computeChange returned an array ' +
-    //       'shorter than the length (' + this.fraction.length + ') of this.fraction.';
-    //   }
-    //   let output = '<pre>NUMBER   VALUE\n';
-    //   let sum = 0;
-    //   for (const item of this.sum) {
-    //     sum += change[item] * this.fraction[item];
-    //     const n = change[item].toString();
-    //     const a = this.fraction[item].toString();
-    //     output += rightJustify(n, 4) + rightJustify(a, 9) + '\n';
-    //   }
-    //   output += 'TOTAL this.money: ' + sum + ' (total is ';
-    //   output += (sum === this.money ? 'correct' :
-    //     'incorrect, should be ' + this.money) + ')\n';
-    //   return output;
-    // }
+    function makeChange() {
+      // compute change as an array: each element of change tells
+      // how many of the corresponding value in this.fraction to give. The
+      // total value should equal this.money.
+      let change = computeChange(this.fraction, this.money);
+      // now format the results. Output should look like:
+      // NUMBER   VALUE
+      //    1       50
+      //    0       25
+      //    1       10
+      //    1        5
+      //    3        1
+      // TOTAL this.money: 68 (total is correct)
+      //
+      // First, we'll do some type checking in case change is not of the
+      // expected type.
+      change = [].concat(change); // force whatever it is to be an array
+      // it should be an array of numbers, so let's check
+      // for (const item of change) {
+      //   if (typeof (change[item]) !== 'number') {
+      //     return 'Error: the function computeChange did not return ' +
+      //       'an array of numbers.';
+      //   }
+      // }
+      // if (change.length > this.fraction.length) {
+      //   return 'Error: the function computeChange returned an array ' +
+      //     'longer than the length (' + this.fraction.length + ') of this.fraction.';
+      // }
+      // if (change.length < this.fraction.length) {
+      //   return 'Error: the function computeChange returned an array ' +
+      //     'shorter than the length (' + this.fraction.length + ') of this.fraction.';
+      // }
+      let output = '<pre>NUMBER   VALUE\n';
+      let sum = 0;
+      for (const item of this.sum) {
+        sum += change[item] * this.fraction[item];
+      }
+      output += 'TOTAL this.money: ' + sum + ' (total is ';
+      output += (sum === this.money ? 'correct' :
+        'incorrect, should be ' + this.money) + ')\n';
+      return output;
+    }
 
 
     // function runSolution() {
